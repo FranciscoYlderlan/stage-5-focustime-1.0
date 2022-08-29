@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 240;
+    --bg-primary-color: hsl(240, 5%, 7%);
+    --bg-secundary-color: hsla(194, 100%, 63%, 0.13);
+    --cl-texting-color: hsl(240, 0%, 100%);
+    --dm-button: 6.4rem;
+    --dm-wrapper-button:clamp(16rem, calc(10rem + ((1vw - 3.2px) * 6.0714)), 22.8rem);
+
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    background-color: var(--bg-primary-color);
+}
+
+body, input {
+    font-size: 8.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10rem;
+    color: var(--cl-texting-color);
+}
+
+input:focus {
+    outline: 3px solid var(--cl-texting-color);
+}
+
+main {
+    justify-self: center;
+    align-self: end;
+    
+    display: grid;
+    gap: 1.6rem;
+
+    justify-items: center;
+}
+form input {
+    text-align: right;
+}
+
+form, .wrapper-display {
+    display: flex;
+    width: 28rem;
+}
+
+.wrapper-display {
+    
+    justify-content: space-evenly;
+    
+}
+.time {
+    padding: 3px 0;
+}
+
+input {
+    width: 100%;
+    padding-inline: 1rem;
+    background-color: var(--bg-secundary-color);
+    border: 3px solid var(--bg-secundary-color);
+    border-radius: 4px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.wrapper-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 22.8rem;
+    padding: 2.2rem 4rem;
+    
+    background-color: var(--bg-secundary-color);
+    border-radius: 9999px;
+}
+button {
+    display: inline-flex;
+    justify-content: center;
+    background-color: transparent;
+    border:none;
+    height: var(--dm-button);
+    width: var(--dm-button);
+}
+
+footer {
+  place-self: end;
+  padding: 3.2rem 4rem;
+}
+
+.hide {
+    display: none;
+}
+
