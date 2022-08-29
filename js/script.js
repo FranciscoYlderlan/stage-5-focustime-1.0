@@ -28,6 +28,8 @@ function countdown () {
         if(reset){
             sound.play(sound.kitchenTimer);
             components.input.update(timeDefaut.minutes,timeDefaut.seconds);
+            components.button.enable(btnPlay,btnPause);
+            components.button.enable(btnSet, btnReset);
             return
         };
 
