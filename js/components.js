@@ -36,6 +36,9 @@ const input = {
         if(components.input.minutes.value < 0) {
             components.input.minutes.value = 0;
         }
+        if(components.input.minutes.value > 60) {
+            components.input.minutes.value = 60;
+        }
         if(components.input.seconds.value < 0) {
             components.input.seconds.value = 0;
         }
