@@ -1,7 +1,7 @@
 export const sound = {
-    btnPress: new Audio("../assets/audios_button-press.wav"),
-    music: new Audio("../assets/audios_lo-fi.mp3"),
-    kitchenTimer: new Audio("../assets/audios_kitchen-timer.mp3"), 
+    btnPress: new Audio("https://github.com/FranciscoYlderlan/stage-5-focustime-1.0/blob/main/assets/audios_button-press.wav?raw=true"),
+    music: new Audio("https://github.com/FranciscoYlderlan/stage-5-focustime-1.0/blob/main/assets/audios_lo-fi.mp3?raw=true"),
+    kitchenTimer: new Audio("https://github.com/FranciscoYlderlan/stage-5-focustime-1.0/blob/main/assets/audios_kitchen-timer.mp3?raw=true"), 
     
     play(sound) {
         sound.play();
